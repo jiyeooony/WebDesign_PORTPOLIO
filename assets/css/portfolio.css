@@ -435,7 +435,7 @@ body.overHidden{overflow: hidden;}
 .profileC h4 {
     font-size: 30px;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 1.6;
     font-family: amaR_italic;
     margin-top: 20px;
 }
