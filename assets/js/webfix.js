@@ -40,7 +40,7 @@ $(document).ready(function () {
 		$projects.eq(tgNum).attr({class: 'web_design selected'}).siblings().removeClass('selected');
 		$('#indicator ul li').eq(tgNum).children().addClass('active').end().siblings().children().removeClass('active');
 		$('.webBG img').removeClass().eq(tgNum).addClass('selected');
-		var moveArr = [0, posArr[0], posArr[1], posArr[2], posArr[3]]; //인디케이터 클릭시 이동위치 배열 추가
+		var moveArr = [0, posArr[0], posArr[1]]; //인디케이터 클릭시 이동위치 배열 추가
 		$projectsWrapper.stop().animate({scrollTop : moveArr[tgNum]});
 		console.log(moveArr);
 	});
