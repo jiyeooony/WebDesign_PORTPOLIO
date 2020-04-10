@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Web Design : PORTFOLIO </title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/design.css">
+    <link rel="shortcut icon" href="assets/images/total/logo.png">
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/web.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/webModal.js"></script>
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+    </script>
+    </head>
+<body class="overHidden">
+    <header id="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="assets/images/total/logo.png" alt="PORTFOLIO">
+            </a>
+        </h1>
+        <button class="btn_menu">
+            <span class="sr-only">메뉴 열기</span>
+            <span class="line top"></span>
+            <span class="line mid"></span>
+            <span class="line btm"></span>
+            <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 6 24" style="enable-background:new 0 0 6 24;" xml:space="preserve">
+            <g>
+                <g>
+                    <rect class="st0" width="6" height="24"/>
+                </g>
+                <g>
+                    <circle class="dote" cx="3" cy="3" r="3"/>
+                </g>
+            </g>
+            </svg>        
+        </button>
+        <nav id="gnb">
+            <h2 class="sr-only">주메뉴</h2>
+            <ul class="sign">
+                <li>
+                    <a href="index.html" data-link="first">Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="web.html">Design</a>
+                </li>
+                <li>
+                    <a href="project.html">Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="indicator">
+        <h2 class="blind">섹션별 컨텐츠 가기</h2>
+        <ul>
+            <li><a hre data id="1" class="line active">
+                <span class="blind">Dalbo People</span>
+            </a></li>
+            <li><a href data id="2" class="line">
+                <span class="blind">Maxim</span>
+            </a></li>
+            <li><a href data id="3" class="line">
+                <span class="blind">Seoul Design Foundation</span>
+            </a></li>
+            <li><a href data id="4" class="line">
+                <span class="blind">Cosmetic</span>
+            </a></li>
+            <li><a href data id="5" class="line">
+                <span class="blind">Pet Cafe</span>
+            </a></li>
+        </ul>
+    </nav>
+    <section id="web">
+        <h2 class="shimmer">Web Design</h2>
+        <div class="webBG">
+            <img src="assets/images/design/WebD/webD1.jpg" alt data-id="1" class="selected">
+            <img src="assets/images/design/WebD/webD2.jpg" alt data-id="2">
+            <img src="assets/images/design/WebD/webD3.jpg" alt data-id="3">
+            <img src="assets/images/design/WebD/webD4.jpg" alt data-id="4">
+            <img src="assets/images/design/WebD/webD5.jpg" alt data-id="5">
+        </div>
+        <div class="webD">
+            <div id="webD1" class="web_design selected" data-id="1">
+                <div class="button_container">
+                    <div class="webTitle">
+                        <a href="#modal11">
+                            <h3>
+                                <button data-href="#modal11" class="open_btn">Dalbo People</button>
+                                <span class="web_subT">application design</span>
+                            </h3>
+                            <span class="num order1">1st</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="webD2" class="web_design selected" data-id="2">
+                <div class="webTitle">
+                    <a href="#modal12">
+                        <h3>
+                            <button data-href="#modal12" class="open_btn">Maxim</button>
+                            <span class="web_subT">homepage renewal</span>
+                        </h3>
+                        <span class="num order2">2nd</span>
+                    </a>
+                </div>
+            </div>
+            <div id="webD3" class="web_design selected" data-id="3">
+                <div class="webTitle">
+                    <a href="#modal13">
+                        <h3>
+                            <button data-href="#modal13" class="open_btn">Seoul Design <br> Foundation</br></button>
+                            <span class="web_subT">homepage renewal</span>
+                        </h3>
+                        <span class="num order3">3rd</span>
+                    </a>
+                </div>
+            </div>
+            <div id="webD4" class="web_design selected" data-id="4">
+                <div class="webTitle">
+                    <a href="#modal14">
+                        <h3>
+                            <button data-href="#modal14" class="open_btn">Cosmetic</button>
+                            <span class="web_subT">detail page design</span>
+                        </h3>
+                        <span class="num order4">4th</span>
+                    </a>
+                </div>
+            </div>
+            <div id="webD5" class="web_design selected" data-id="5">
+                <div class="webTitle">
+                    <a href="#modal15">
+                        <h3>
+                            <button data-href="#modal15" class="open_btn">Pet Cafe</button>
+                            <span class="web_subT">detail page design <br> banner design</span>
+                        </h3>
+                        <span class="num order5">5th</span>
+                    </a>
+                </div>
+            </div>
+            <nav id="snb">
+                <h2 class="blind">이동버튼</h2>
+                <ul>
+                    <li>
+                        <button onclick="goBack()">
+                            <a href="#" class="back" role="button"></a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- 모달 상세 내용:열기 버튼 바로뒤에 위치해도 됨 -->
+        <!-- <div id="dim"></div> 스크립트로 동적생성 -->
+        <!-- 포폴01 -->
+        <div id="modal11" class="modal_cnt modal_sub" role="dialog" aria-modal="true" aria-labelledby="tit2">
+            <div class="appD">
+                <img src="assets/images/design/WebD/webD_01-1.jpg" alt="">
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴02 -->
+        <div id="modal12" class="modal_cnt modal_sub" role="dialog" aria-modal="true" aria-labelledby="tit2">
+            <div class="maxim">
+                <img src="assets/images/design/WebD/webD_02-2.jpg" alt="">
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴03 -->
+        <div id="modal13" class="modal_cnt modal_sub" role="dialog" aria-modal="true" aria-labelledby="tit2">
+            <div class="seoulD">
+                <img src="assets/images/design/WebD/webD_03-3.jpg" alt="">
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴04 -->
+        <div id="modal14" class="modal_cnt modal_sub" role="dialog" aria-modal="true" aria-labelledby="tit2">
+            <div class="lipstick">
+                <img src="assets/images/design/WebD/webD_04-4.jpg" alt="">
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴05 -->
+        <div id="modal15" class="modal_cnt modal_sub" role="dialog" aria-modal="true" aria-labelledby="tit2">
+            <div class="petCafe">
+                <img src="assets/images/design/WebD/webD_05-5.jpg" alt="">
+                <img src="assets/images/design/WebD/webD_05-6.jpg" alt="">
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+</body>
+</html>

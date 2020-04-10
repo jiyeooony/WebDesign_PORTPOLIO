@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title> Profile : PORTFOLIO </title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="shortcut icon" href="assets/images/total/logo.png">
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/modal.js"></script>
+</head>
+<body class="overHidden">
+    <header id="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="assets/images/total/logo.png" alt="PORTFOLIO">
+            </a>
+        </h1>
+        <button class="btn_menu">
+            <span class="sr-only">메뉴 열기</span>
+            <span class="line top"></span>
+            <span class="line mid"></span>
+            <span class="line btm"></span>
+            <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 6 24" style="enable-background:new 0 0 6 24;" xml:space="preserve">
+            <g>
+                <g>
+                    <rect class="st0" width="6" height="24"/>
+                </g>
+                <g>
+                    <circle class="dote" cx="3" cy="3" r="3"/>
+                </g>
+            </g>
+            </svg>        
+        </button>
+        <nav id="gnb">
+            <h2 class="sr-only">주메뉴</h2>
+            <ul class="sign">
+                <li>
+                    <a href="index.html" data-link="first">Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="web.html">Design</a>
+                </li>
+                <li>
+                    <a href="project.html">Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="profile">
+        <h2 class="shimmer">Profile</h2>
+        <div class="constellation"></div>
+        <div class="profileC">
+            <aside class="profile_card">
+                <div class="profile_intro">
+                    <a href="#">
+                        <img src="assets/images/total/logo.png" alt="Hover on me">
+                    </a>
+                    <h3>박지연 <br><span>Ji yeon Park</span></h3>
+                    <h4>Web Designer</h4>
+                </div>
+                <div class="profile_bio">
+                    <p>E-mail : sally0415@naver.com</p>
+                    <p>Phone : 010-7426-9966</p>
+                    <p>Major : 색채디자인</p>
+                    <div id="skillsD" class="options">
+                        <h4>
+                            <button type="button" class="open_btn" data-href="#modal21" aria-haspopup="dialog" title="대화상자">Design Skills</button>
+                        </h4>
+                    </div>
+    
+                    <div id="skillsP" class="options">
+                        <h4>
+                            <button type="button" class="open_btn" data-href="#modal22" aria-haspopup="dialog" title="대화상자">Publisher Skills</button>
+                        </h4>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="moon">
+            <div class="texture"></div>
+        </div>
+    </section>
+
+    <!-- 모달 상세 내용:열기 버튼 바로뒤에 위치해도 됨 -->
+        <!-- <div id="dim"></div> 스크립트로 동적생성 -->
+        <!-- Design skills -->
+        <div id="modal21" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit3">
+            <div class="chartD">
+                <h4>Design Skills</h4>
+                <div class="design_opt">
+                    <div class="progressBar">
+                        <h5>Photoshop</h5>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-92"><span class="photo">92%</span></div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h5>Illustrator</h5>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-95"><span class="illust">95%</span></div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h5>Indesign</h5>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-75"><span class="inde">75%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chartD_progress">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- Publisher skills -->
+        <div id="modal22" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit3">
+            <div class="chartP">
+                <h4>Publisher Skills</h4>
+                <div class="pub_opt">
+                    <div class="progressBar">
+                        <h5>HTML5</h5>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-83"><span class="html">83%</span></div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h5>CSS3</h5>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-80"><span class="css">80%</span></div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h5>ZEPLIN</h5>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-76"><span class="zeplin">76%</span></div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h5>Adobe XD</h5>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-74"><span class="xd">74%</span></div>
+                        </div>
+                    </div>
+                    <div class="progressBar">
+                        <h5>Web Accessibility</h5>
+                        <div class="progressBarContainer">
+                            <div class="progressBarValue value-78"><span class="webAccess">78%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chartP_progress">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+</body>
+</html>
